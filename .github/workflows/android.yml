@@ -23,6 +23,9 @@ jobs:
       - name: Build React App
         run: npm run build
 
+      - name: Initialize Capacitor
+        run: npx cap init Jibly com.jibly.app --web-dir dist
+
       - name: Add Android Platform
         run: npx cap add android
 
